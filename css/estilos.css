@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background: #E9ECF4;
+    color: #000;
+    font-family:BlinkMacSystemFont;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000PX;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,auto)
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer{
+    background: #fff;
+    border-radius: 4px;
+}
+
+.contenedor .header{
+background: #12203e;   
+color: #fff; 
+grid-column: 1/-1;
+}
+
+.contenedor .contenido {
+    grid-column: span 2;
+    text-align: justify;
+}
+
+.contenedor .sidebar{
+    grid-column: 3/-1;
+    grid-row:span 2;
+    background: #faa43d;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .widget-1,
+.contenedor .widget-2{
+background:#55a8fe;
+color:#fff;
+height: 100px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.contenedor .footer{
+    background:salmon;
+    color: #fff;
+    grid-column: 1/-1;
+    text-align: center;
+}

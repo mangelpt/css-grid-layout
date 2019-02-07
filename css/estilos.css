@@ -38,6 +38,9 @@ grid-column: 1/-1;
     grid-column: span 2;
     text-align: justify;
 }
+.contenedor .contenido p{
+    padding: 10px;
+}
 
 .contenedor .sidebar{
     grid-column: 3/-1;
@@ -46,6 +49,7 @@ grid-column: 1/-1;
     display:flex;
     align-items: center;
     justify-content: center;
+    min-height: 100px;
 }
 
 .contenedor .widget-1,
@@ -63,4 +67,32 @@ justify-content: center;
     color: #fff;
     grid-column: 1/-1;
     text-align: center;
+}
+
+/* responsive */
+
+@media screen and (max-width:768px){
+    .contenedor .contenido {
+        grid-column:1/-1;
+    }
+
+    .contenedor .sidebar{
+        grid-column: span 4;
+    }
+
+    .contenedor .widget-1{
+    grid-column: span 3;
+    }
+
+
+}
+@media screen and (max-width:480px){
+
+    .contenedor .widget-1,
+    .contenedor .widget-2{
+    grid-column: span 4;
+    }
+
+
+
 }
